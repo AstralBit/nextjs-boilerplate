@@ -11,10 +11,7 @@ export async function generateStaticParams() {
   ];
 }
 
-export async function GET(
-  _: Request,
-  { params }: { params: { format: string } }
-) {
+export async function GET(_: Request, { params }) {
   const { format } = params;
   const validFormats = ["rss.xml", "atom.xml", "feed.json"];
 
