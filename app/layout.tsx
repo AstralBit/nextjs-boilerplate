@@ -4,7 +4,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Navbar } from "./components/nav";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-// import Footer from "./components/footer";
+import Footer from "./components/footer";
 import { ThemeProvider } from "./components/theme-switch";
 import { metaData } from "./config";
 
@@ -83,7 +83,7 @@ export default function RootLayout({
           <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[750px] w-full">
             <Navbar />
             {children}
-            {/* <Footer /> */}
+            <Footer />
             <SpeedInsights />
           </main>
         </ThemeProvider>
