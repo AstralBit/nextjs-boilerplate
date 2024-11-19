@@ -15,7 +15,6 @@ export default function Page() {
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
         你好，欢迎来到我的博客！
       </h1>
-
       <div className="prose prose-neutral dark:prose-invert">
         <p>始终相信，代码可以理性，但生活需要感性。</p>
         <p>骑上车，或者翻几页喜欢的书，看一部经典老电影</p>
