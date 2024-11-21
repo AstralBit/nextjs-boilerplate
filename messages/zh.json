@@ -1,47 +1,21 @@
 {
+  "Home": {
+    "welcome": "你好，欢迎来到我的博客！",
+    "p2": "骑上车，或者翻几页喜欢的书，看一部经典老电影",
+    "p3": "代码再多，也要留点时间给诗和远方",
+    "p4": "希望在这片小小的博客空间里，能找到同样热爱自由、享受浪漫的你们"
+  },
+  "Nav": {
+    "blog": "博客",
+    "project": "项目",
+    "photo": "照片"
+  },
   "Error": {
     "description": "<p>Es ist leider ein Problem aufgetreten.</p><p>Du kannst versuchen <retry>diese Seite neu zu laden</retry>.</p>",
     "title": "Etwas ist schief gelaufen!"
   },
-  "IndexPage": {
-    "description": "Dies ist ein Beispiel, das die Verwendung von <code>next-intl</code> mit dem Next.js App Router demonstriert. Bei Ändern der Sprache rechts oben ändert sich der Inhalt dieser Seite.",
-    "title": "next-intl Beispiel"
-  },
-  "LocaleLayout": {
-    "title": "next-intl Beispiel"
-  },
   "LocaleSwitcher": {
     "label": "Sprache ändern",
     "locale": "{locale, select, zh {简体中文} en {English} other {Unbekannt}}"
-  },
-  "Manifest": {
-    "description": "",
-    "name": ""
-  },
-  "Navigation": {
-    "home": "Start",
-    "pathnames": "Pfadnamen"
-  },
-  "NotFoundPage": {
-    "description": "Bitte überprüfe die Addressleiste deines Browsers oder verwende die Navigation um zu einer bekannten Seite zu wechseln.",
-    "title": "Seite nicht gefunden"
-  },
-  "PageLayout": {
-    "links": {
-      "docs": {
-        "description": "Erfahre mehr über next-intl in der offiziellen Dokumentation.",
-        "href": "https://next-intl-docs.vercel.app/",
-        "title": "Dokumentation"
-      },
-      "source": {
-        "description": "Sieh dir den Quellcode dieses Beispiels auf GitHub an.",
-        "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router",
-        "title": "Quellcode"
-      }
-    }
-  },
-  "PathnamesPage": {
-    "description": "<p>Auch die Pfadnamen sind internationalisiert.</p><p>Wenn du die Standardsprache Englisch verwendest, siehst du <code>/en/pathnames</code> in der Adressleiste des Browsers auf dieser Seite.</p><p>Wenn du die Sprache auf Deutsch änderst, wird die URL entsprechend lokalisiert (<code>/zh/pfadnamen</code>).</p>",
-    "title": "Pfadnamen"
   }
 }
