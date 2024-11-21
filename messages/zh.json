@@ -17,5 +17,12 @@
   "LocaleSwitcher": {
     "label": "Sprache ändern",
     "locale": "{locale, select, zh {简体中文} en {English} other {Unbekannt}}"
+  },
+  "NotFoundPage": {
+    "description": "请仔细检查浏览器地址栏或使用导航转到已知页面",
+    "title": "未找到页面"
+  },
+  "LocaleLayout": {
+    "title": "karl 博客"
   }
 }
