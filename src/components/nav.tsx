@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";
+import LocaleSwitcher from "./LocaleSwitcher";
 import { metaData } from "@/src/config";
 
 const navItems = {
@@ -27,6 +28,7 @@ export function Navbar() {
               {name}
             </Link>
           ))}
+          <LocaleSwitcher />
           <ThemeSwitch />
         </div>
       </div>

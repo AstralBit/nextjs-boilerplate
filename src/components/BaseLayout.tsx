@@ -1,11 +1,10 @@
-import { clsx } from "clsx";
-import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ReactNode } from "react";
-import Navigation from "@/src/components/Navigation";
-
-const inter = Inter({ subsets: ["latin"] });
+import { ThemeProvider } from "./theme-switch";
+import { Navbar } from "./nav";
+import Footer from "./footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 type Props = {
   children: ReactNode;
@@ -19,11 +18,22 @@ export default async function BaseLayout({ children, locale }: Props) {
 
   return (
     <html className="h-full" lang={locale}>
-      <body className={clsx(inter.className, "flex h-full flex-col")}>
-        <NextIntlClientProvider messages={messages}>
-          <Navigation />
-          {children}
-        </NextIntlClientProvider>
+      <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[640px] w-full">
+            <NextIntlClientProvider messages={messages}>
+              <Navbar />
+              {children}
+              <Footer />
+            </NextIntlClientProvider>
+            <SpeedInsights />
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
