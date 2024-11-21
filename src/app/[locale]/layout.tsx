@@ -1,19 +1,13 @@
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ReactNode } from "react";
 import BaseLayout from "@/src/components/BaseLayout";
 import { routing } from "@/src/i18n/routing";
-
-type Props = {
-  children: ReactNode;
-  params: { locale: string };
-};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({ params }: Omit<Props, "children">) {
+export async function generateMetadata({ params }) {
   const currentParams = await params;
 
   const { locale } = currentParams;
@@ -25,7 +19,7 @@ export async function generateMetadata({ params }: Omit<Props, "children">) {
   };
 }
 
-export default async function LocaleLayout({ children, params }: Props) {
+export default async function LocaleLayout({ children, params }) {
   const currentParams = await params;
   const { locale } = currentParams;
 
