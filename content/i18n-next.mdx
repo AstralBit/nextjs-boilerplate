@@ -21,7 +21,7 @@ Next.js 的国际化功能通过配置文件 next.config.js 中的 i18n 字段�
 // next.config.js
 module.exports = {
 	i18n: {
-		locales: ['en', 'fr', 'de'], // 支持的语言列表
+		locales: ['en', 'fr', 'zh'], // 支持的语言列表
 		defaultLocale: 'en', // 默认语言
 		localeDetection: true, // 是否根据用户偏好检测语言
 	},
@@ -36,11 +36,11 @@ localeDetection：自动检测用户的浏览器语言，并根据语言设置�
 Next.js 的国际化特性支持自动地为每个语言生成不同的 URL 路径。这意味着每个页面会为每种语言生成独
 立的静态页面。例如：
 
-/about 是默认语言（如 en）的页面。/fr/about 是法语版本的页面。/de/about 是德语版本的页面。
+/about 是默认语言（如 en）的页面。/fr/about 是法语版本的页面。/zh/about 是德语版本的页面。
 
 实现原理：
 
-路径前缀：Next.js 会根据 i18n 配置自动为不同语言添加前缀（例如 /fr、/de 等），然后将对应的翻译内
+路径前缀：Next.js 会根据 i18n 配置自动为不同语言添加前缀（例如 /fr、/zh 等），然后将对应的翻译内
 容加载到页面中。语言检测：通过浏览器设置或 URL 前缀来检测用户语言，并将用户定向到适合的语言版
 本。例如：
 
