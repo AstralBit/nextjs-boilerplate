@@ -25,7 +25,7 @@ export default async function BaseLayout({ children, locale }: Props) {
           enableSystem
           disableTransitionOnChange
         >
-          <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[640px] w-full">
+          <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[720px] w-full">
             <NextIntlClientProvider messages={messages}>
               <Navbar />
               {children}
