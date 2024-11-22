@@ -17,8 +17,6 @@ export default function Page() {
       </h1>
 
       <div className="prose prose-neutral dark:prose-invert">
-        <p>始终相信，代码可以理性，但生活需要感性。</p>
-        <p>骑上车，或者翻几页喜欢的书，看一部经典老电影</p>
         <p>代码再多，也要留点时间给诗和远方。</p>
         <p>希望在这片小小的博客空间里，能找到同样热爱自由、享受浪漫的你们。</p>
       </div>
