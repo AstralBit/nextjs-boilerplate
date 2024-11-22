@@ -4,7 +4,7 @@ import Script from "next/script";
 import { CustomMDX } from "@/src/components/mdx";
 import { formatDate, getBlogPosts } from "@/src/app/[locale]/lib/posts";
 import { metaData } from "@/src/config";
-import Discuss from "@/src/components/discuss";
+// import Discuss from "@/src/components/discuss";
 
 export async function generateStaticParams() {
   const posts = getBlogPosts();
@@ -102,9 +102,9 @@ export default async function Blog({ params }) {
       <article className="prose prose-quoteless prose-neutral dark:prose-invert">
         <CustomMDX source={post.content} />
       </article>
-      <div className="discuss-box">
+      {/* <div className="discuss-box">
         <Discuss />
-      </div>
+      </div> */}
     </section>
   );
 }
