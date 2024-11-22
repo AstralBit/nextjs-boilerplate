@@ -18,6 +18,15 @@
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
+  --text-bg-page: white;
+  --line-width: 1px;
+  --line-gap: 5px;
+  --line-color: black;
+
+  /* 定义延迟变量 */
+  --delay: 8s;
+  /* 定义动画时长 */
+  --duration: 16s;
 }
 
 /* Dark theme colors */
@@ -32,6 +41,8 @@
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
+  --line-color: white;
+  --text-bg-page: #121212;
 }
 
 html {
@@ -149,4 +160,107 @@ table {
 
 .title {
   text-wrap: balance;
+}
+
+.ani-1 {
+  z-index: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+
+  .x-line {
+    position: absolute;
+    background: linear-gradient(
+      to right,
+      var(--line-color),
+      var(--line-color) 50%,
+      transparent 0,
+      transparent
+    );
+    background-size: var(--line-gap) var(--line-width);
+    width: 100%;
+    height: var(--line-width);
+    animation: var(--duration) offset-x infinite;
+    left: -100%;
+  }
+
+  .y-line {
+    position: absolute;
+    background: linear-gradient(
+      180deg,
+      var(--line-color),
+      var(--line-color) 50%,
+      transparent 0,
+      transparent
+    );
+    background-size: var(--line-width) var(--line-gap);
+    width: var(--line-width);
+    height: 100%;
+
+    animation: var(--duration) offset-y infinite;
+    /* 设定初始位置 */
+    top: -100%;
+  }
+}
+
+.x-line:nth-child(2) {
+  animation-delay: calc(var(--delay) + 0.2s);
+}
+
+.x-line:nth-child(3) {
+  animation-delay: calc(var(--delay) + 0.4s);
+}
+
+.x-line:nth-child(4) {
+  animation-delay: calc(var(--delay) + 0.6s);
+}
+
+.y-line:nth-child(6) {
+  animation-delay: calc(var(--delay) + 0.2s);
+  animation-duration: calc(var(--duration) - 0.5s);
+}
+.y-line:nth-child(7) {
+  animation-delay: calc(var(--delay) + 0.2s);
+  animation-duration: calc(var(--duration) - 0.5s);
+}
+
+.y-line:nth-child(8) {
+  animation-delay: calc(var(--delay) + 0.2s);
+  animation-duration: calc(var(--duration) - 0.5s);
+}
+@keyframes offset-x {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes offset-y {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.home-page {
+  position: relative;
+  z-index: 10;
+  background: var(--text-bg-page);
+}
+
+.nav-page {
+  position: relative;
+  z-index: 10;
+  background: var(--text-bg-page);
+}
+
+.giscus {
+  width: 700px;
+  margin-bottom: 100px;
 }
