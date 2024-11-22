@@ -13,7 +13,7 @@ export default function Page() {
         priority
       />
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        你好，欢迎来到我的博客！
+        欢迎来到我的博客！
       </h1>
 
       <div className="prose prose-neutral dark:prose-invert">
