@@ -42,9 +42,9 @@ export default function Page() {
         {/* <div className="x-line top-[90%]"></div> */}
         {/* <div className="x-line top-[100%]"></div> */}
         {/* <!-- 减去line-width是因为 overflow-hidden 会遮住100%偏移的元素 --> */}
-        <div className="x-line top-[calc(100%-var(--line-width))]"></div>
+        {/* <div className="x-line top-[calc(100%-var(--line-width))]"></div> */}
 
-        <div className="y-line  left-0"></div>
+        {/* <div className="y-line  left-0"></div> */}
         {/* <div className="y-line  left-[10%]"></div> */}
         {/* <div className="y-line  left-[20%]"></div> */}
         {/* <div className="y-line  left-[30%]"></div> */}
@@ -55,7 +55,7 @@ export default function Page() {
         <div className="y-line  left-[80%]"></div>
         {/* <div className="y-line  left-[90%]"></div> */}
         {/* <div className="y-line  left-[100%]"></div> */}
-        <div className="y-line  left-[calc(100%-var(--line-width))]"></div>
+        {/* <div className="y-line  left-[calc(100%-var(--line-width))]"></div> */}
       </section>
     </>
   );
