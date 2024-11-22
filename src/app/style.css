@@ -255,3 +255,8 @@ table {
 .nav-page {
   background: var(--text-bg-page);
 }
+
+.giscus {
+  width: 700px;
+  margin-bottom: 100px;
+}

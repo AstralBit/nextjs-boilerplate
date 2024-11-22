@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ReactNode } from "react";
 import { ThemeProvider } from "./theme-switch";
+import Head from "next/head";
 import { Navbar } from "./nav";
 import Footer from "./footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -18,6 +19,27 @@ export default async function BaseLayout({ children, locale }: Props) {
 
   return (
     <html className="h-full" lang={locale}>
+      <Head>
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          href="/rss.xml"
+          title="RSS Feed"
+        />
+        <link
+          rel="alternate"
+          type="application/atom+xml"
+          href="/atom.xml"
+          title="Atom Feed"
+        />
+        <link
+          rel="alternate"
+          type="application/feed+json"
+          href="/feed.json"
+          title="JSON Feed"
+        />
+      </Head>
+
       <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40">
         <ThemeProvider
           attribute="class"

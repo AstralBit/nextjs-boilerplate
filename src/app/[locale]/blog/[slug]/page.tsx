@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import { CustomMDX } from "@/src/components/mdx";
 import { formatDate, getBlogPosts } from "@/src/app/[locale]/lib/posts";
 import { metaData } from "@/src/config";
+import Discuss from "@/src/components/discuss";
 
 export async function generateStaticParams() {
   const posts = getBlogPosts();
@@ -15,7 +17,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }): Promise<Metadata | undefined> {
-  const post = getBlogPosts().find((post) => post.slug === params.slug);
+  const currentParams = await params;
+  const post = getBlogPosts().find((post) => post.slug === currentParams?.slug);
   if (!post) {
     return;
   }
@@ -54,8 +57,10 @@ export async function generateMetadata({
   };
 }
 
-export default function Blog({ params }) {
-  const post = getBlogPosts().find((post) => post.slug === params.slug);
+export default async function Blog({ params }) {
+  const currentParams = await params;
+
+  const post = getBlogPosts().find((post) => post.slug === currentParams?.slug);
 
   if (!post) {
     notFound();
@@ -63,7 +68,8 @@ export default function Blog({ params }) {
 
   return (
     <section>
-      <script
+      <Script
+        id="karl_html_hydration"
         type="application/ld+json"
         suppressHydrationWarning
         dangerouslySetInnerHTML={{
@@ -96,6 +102,9 @@ export default function Blog({ params }) {
       <article className="prose prose-quoteless prose-neutral dark:prose-invert">
         <CustomMDX source={post.content} />
       </article>
+      <div className="discuss-box">
+        <Discuss />
+      </div>
     </section>
   );
 }
