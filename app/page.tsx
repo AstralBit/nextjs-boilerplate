@@ -12,10 +12,6 @@ export default function Page() {
         height={160}
         priority
       />
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        欢迎来到我的博客！
-      </h1>
-
       <div className="prose prose-neutral dark:prose-invert">
         <p>代码再多，也要留点时间给诗和远方。</p>
         <p>希望在这片小小的博客空间里，能找到同样热爱自由、享受浪漫的你们。</p>
