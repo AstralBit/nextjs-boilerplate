@@ -4,6 +4,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 <img width="1088" alt="iShot_2025-01-14_09 27 33" src="https://github.com/user-attachments/assets/a3092a5e-1d90-4a4a-b13c-096e32294861" />
 
+<img width="865" alt="iShot_2025-01-14_09 31 59" src="https://github.com/user-attachments/assets/789f7f17-f0af-424a-b9f2-2222e4582d1c" />
+
 
 First, run the development server:
 
