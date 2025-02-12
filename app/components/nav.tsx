@@ -15,14 +15,14 @@ export function Navbar() {
   const pathName = usePathname();
 
   return (
-    <nav className="lg:mb-16 mb-12 py-5">
-      <div className="flex flex-col md:flex-row md:items-center justify-between">
+    <nav className="py-5">
+      <div className="flex flex-col md:flex-row md:items-center">
         <div className="flex items-center">
           <Link href="/" className="text-3xl font-semibold tracking-tight">
             {metaData.title}
           </Link>
         </div>
-        <div className="flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center">
+        <div className="flex flex-row gap-4 mt-6 md:mt-0  items-center ml-6">
           {Object.entries(navItems).map(([path, { name }]) => {
             const isActive = pathName.includes(path); // 判断是否是当前路径
 
