@@ -7,7 +7,7 @@ export const metaData = {
 };
 
 export const socialLinks = {
-  github: "https://github.com/fsyud",
+  github: "https://github.com/AstralBit",
   instagram: "https://www.instagram.com/only_k_u7_77/",
   linkedin: "https://www.linkedin.com/in/%E5%AE%87-%E8%91%A3-44554a13a/",
   email: "learnerdyu@gmail.com",
