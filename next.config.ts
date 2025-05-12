@@ -3,6 +3,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
+  compiler: {
+    styledComponents: true, // 启用 styled-components
+  },
   async rewrites() {
     return [
       {

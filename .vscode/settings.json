@@ -1,0 +1,93 @@
+{
+  // 编辑器基础设置
+  "editor.fontFamily": "Geist Mono, Monaco, Menlo, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.6,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": true,
+  "editor.renderWhitespace": "selection",
+  "editor.smoothScrolling": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+
+  // 光标设置
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "blink",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorWidth": 1,
+
+  // 文件设置
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true
+  },
+
+  // 终端设置
+  "terminal.integrated.fontFamily": "Geist Mono",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.6,
+
+  // 扩展设置
+  "extensions.ignoreRecommendations": false,
+  "extensions.autoUpdate": true,
+
+  // 工作区设置
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": false,
+
+  // 搜索设置
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/.next": true
+  },
+
+  // TypeScript 设置
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+
+  // JavaScript 设置
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggest.autoImports": true,
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+
+  // 格式化设置
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.trailingComma": "es5",
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+
+  // ESLint 设置
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": ["./"],
+  "eslint.run": "onType",
+
+  // 调试设置
+  "debug.console.fontSize": 14,
+  "debug.console.lineHeight": 1.6,
+  "debug.toolBarLocation": "docked"
+}
