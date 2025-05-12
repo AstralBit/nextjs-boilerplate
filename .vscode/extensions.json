@@ -1,0 +1,37 @@
+{
+  "recommendations": [
+    // 基础工具
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "christian-kohler.path-intellisense",
+    "christian-kohler.npm-intellisense",
+    "wix.vscode-import-cost",
+
+    // Git 相关
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+
+    // 主题和图标
+    "PKief.material-icon-theme",
+    "dracula-theme.theme-dracula",
+
+    // 语言支持
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "styled-components.vscode-styled-components",
+    "bradlc.vscode-tailwindcss",
+    "prisma.prisma",
+
+    // 调试工具
+    "ms-vscode.js-debug",
+    "ms-vscode.js-debug-nightly",
+
+    // 其他实用工具
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    "naumovs.color-highlight",
+    "Gruntfuggly.todo-tree",
+    "wakatime.vscode-wakatime"
+  ]
+}
