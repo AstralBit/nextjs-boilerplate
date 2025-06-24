@@ -45,7 +45,7 @@
   "extensions.autoUpdate": true,
 
   // 工作区设置
-  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.colorTheme": "Dracula Theme",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.enablePreview": false,
